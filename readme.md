@@ -35,15 +35,15 @@
     ```
 ## What can i use ?
 
-functions         | value           | Default      | Required     | Description
----               | ---             | ---          |              | ---
-`frames`          | `integer`       | None         | `true`       | set the max of frames your sprite have.
-`loop`            | `boolean`       | `true`       | `false`      | set if your sprite have loop or not
-`target`          | `string`        | None         | `true`       | set the element that will receive the animation
-`animationTime`   | `integer`       | `70`         | `false`      | set the frame time of animation
-`spriteClass`     | `string`        | None         | `true`       | set the class prefix of animation (example: "anim-1", "anim-2" in this case the class prefix is "anim-")
-`reverse`         | `boolean`       | `false`      | `false`      | set if the animation is backwards
-`firstNumber`     | `integer`       | `1`          | `false`      | set the first frame of animation
+functions         | value           | Default      | Required     | Description|
+---               | ---             | ---          | ---          | ---          |
+`frames`          | `integer`       | None         | `true`       | set the max of frames your sprite have.|
+`loop`            | `boolean`       | `true`       | `false`      | set if your sprite have loop or not|
+`target`          | `string`        | None         | `true`       | set the element that will receive the animation|
+`animationTime`   | `integer`       | `70`         | `false`      | set the frame time of animation|
+`spriteClass`     | `string`        | None         | `true`       | set the class prefix of animation (example: "anim-1", "anim-2" in this case the class prefix is "anim-")|
+`reverse`         | `boolean`       | `false`      | `false`      | set if the animation is backwards|
+`firstNumber`     | `integer`       | `1`          | `false`      | set the first frame of animation|
 
 
 ## Contributing

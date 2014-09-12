@@ -1,0 +1,73 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-home"></i>
+```
+*/
+.icon-sprite1 {
+  background-image: url(sprite.png);
+  background-position: -33px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite10 {
+  background-image: url(sprite.png);
+  background-position: -165px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite11 {
+  background-image: url(sprite.png);
+  background-position: -66px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite2 {
+  background-image: url(sprite.png);
+  background-position: -99px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite3 {
+  background-image: url(sprite.png);
+  background-position: -132px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite4 {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite5 {
+  background-image: url(sprite.png);
+  background-position: -198px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite6 {
+  background-image: url(sprite.png);
+  background-position: -231px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite7 {
+  background-image: url(sprite.png);
+  background-position: -264px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite8 {
+  background-image: url(sprite.png);
+  background-position: -297px 0px;
+  width: 33px;
+  height: 33px;
+}
+.icon-sprite9 {
+  background-image: url(sprite.png);
+  background-position: -330px 0px;
+  width: 33px;
+  height: 33px;
+}

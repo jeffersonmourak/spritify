@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spritify</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+	<script type="text/javascript" src='spritify.js'></script>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/sprite.css">
+	<link rel="stylesheet" href="assets/css/mario.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script>
+		document.addEventListener("DOMContentLoaded", load, false);
+		function load(){
+			var spriteElement = document.querySelector("#sprite");
+			var buttomOpen = document.querySelector('#open');
+			var buttonClose = document.querySelector('#close');
+			var opened = false;
+			var speed = 40;
+
+
+			sprites.animate({
+				frames:2,
+				loop:true,
+				target:"#mario",
+				animationTime:120,
+				spriteClass:"icon-mario"
+			});
+
+
+			spriteElement.addEventListener('click',function(){
+				if (!opened) {
+					sprites.animate({
+						frames:6,
+						loop:false,
+						target:"#sprite",
+						animationTime:speed,
+						spriteClass:"icon-sprite",
+						reverse:false
+					});
+					opened = true;
+				}
+				else{
+					sprites.animate({
+						firstNumber:6,
+						frames:11,
+						loop:false,
+						target:"#sprite",
+						animationTime:speed,
+						spriteClass:"icon-sprite",
+						reverse:false
+					});
+					opened = false;
+				}
+			},false);
+			buttomOpen.addEventListener('click',function(){
+				sprites.animate({
+					frames:6,
+					loop:false,
+					target:"#sprite",
+					animationTime:speed,
+					spriteClass:"icon-sprite",
+					reverse:false
+				});
+			},false);
+			buttonClose.addEventListener('click',function(){
+				sprites.animate({
+					firstNumber:6,
+					frames:11,
+					loop:false,
+					target:"#sprite",
+					animationTime:speed,
+					spriteClass:"icon-sprite",
+					reverse:false
+				});
+			},false);
+		}
+	</script>
+</head>
+<body>
+	<header class='header'>Spritify <div id='mario' class='mario'></div></header>
+	<article class='main-content'>
+		<h1>Spritify</h1><br>
+		<h3>Introducion</h3>
+		<p>Spritify is a easily library to manage yours sprites, use the spritify is easy, fast and standalone, they uses no plugin. look the demo</p><br>
+		<h3>Demo</h3>
+		<div id='sprite' class='icon-sprite1'></div><br>
+		<button id='open'>open</button><button id='close'>close</button><br>
+		<h3>How use</h3>
+		<p>Is so simple to use Spritify. see the steps<br>
+		<ul>
+			<li>Download the file spritify.js <a href="">here !</a></li>
+			<li>import the code on your HTML file <br>
+				<div class="code">
+					<code>
+						<<span class='tag'>script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"spritify.js"</span>><<span>/</span><span class='tag'>script</span>>
+					</code>
+				</div>
+			</li>
+			<li>import your CSS file with parameters of sprite<br>
+				<div class="code">
+					<code>
+						<<span class='tag'>link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"path/of/sprite.css"</span>><<span>/</span><span class='tag'>link</span>>
+					</code>
+				</div>
+			</li>
+			<li>and implement<br>
+			<div class="code">
+				<code class='code-theme-white'>
+					sprites.animate({<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;frames :<span class="numBool"> 6</span>,<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;loop :<span class="numBool"> false</span>,<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;target : <span class="string">"#sprite"</span>,<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;animationTime : <span class="numBool"> 70</span>,<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;spriteClass : <span class="string">"icon-sprite"</span>,<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;reverse :<span class="numBool"> false</span><br>
+					});
+				</code>
+			</div>
+			</li>
+		</ul>
+		</p>
+		<h3>What can i use ?</h3>
+		<div class="code">
+			<code class='code-theme-white'>frames: <span class="numBool">int</span> <span class="comment">//set the max of frames your sprite have. *this is required to work</span></code>
+		</div>
+		<div class="code">
+			<code class='code-theme-white'>loop: <span class="numBool">boolean</span> <span class="comment">//set if your sprite have loop or not *default = true</span></code>
+		</div>
+		<div class="code">
+			<code class='code-theme-white'>target: <span class="string">"selector"</span> <span class="comment">//set the element that will receive the animation *this is required to work</span></code>
+		</div>
+		<div class="code">
+			<code class='code-theme-white'>animationTime: <span class="numBool">int</span> <span class="comment">//set the frame time of animation *default = 70ms</span></code>
+		</div>
+		<div class="code">
+			<code class='code-theme-white'>spriteClass: <span class="string">"class"</span> <span class="comment">//set the class prefix of animation *this is required to work **example: "anim-1", "anim-2" in this case the class prefix is "anim-"</span></code>
+		</div>
+		<div class="code">
+			<code class='code-theme-white'>reverse: <span class="numBool">false</span> <span class="comment">//set if the animation is backwards *default = false</span></code>
+		</div>
+		<div class="code">
+			<code class='code-theme-white'>firstNumber: <span class="numBool">int</span> <span class="comment">//set the first frame of animation *default = 1</span></code>
+		</div>
+	</article>
+	<footer>Developed by <a target="blank" href="http://github.com/jeffersonmourak/">Jefferson Moura</a> | <a target="blank" href="http://opensource.org/licenses/MIT">Under MIT licence</a> </footer>
+</body>
+</html>

@@ -54,7 +54,8 @@ functions         | value           | Default      | Required     | Description|
 4. Push to the branch
 5. Submit a pull request
 
->Feature branch (`git checkout -b my-new-feature`) | commit (`git commit -m 'Add some feature'`) | push (`git push origin my-new-feature`)
+>Feature branch (`git checkout -b my-new-feature`) | commit (`git commit -m 'Add some feature'`) | push (`git push origin my-new-feature`).
+
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT)

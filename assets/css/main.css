@@ -34,6 +34,7 @@ footer > a:hover{
 	line-height: 60px;
 	padding-left:20px;
 	padding-right:20px; 
+	z-index: 9999;
 }
 .main-content{
 	background-color: #fff;

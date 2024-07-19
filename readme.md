@@ -4,7 +4,7 @@
 
 ## Demo
 
-[Live example!](http://jeffersonmourak.com/demos/spritify/)
+[Live example!](http://jeffersonmourak.com/spritify/)
 
 ## Usage
 
